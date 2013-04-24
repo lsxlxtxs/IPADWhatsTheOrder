@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A985FE1D1725E35400745822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE1C1725E35400745822 /* UIKit.framework */; };
+		A985FE1F1725E35400745822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE1E1725E35400745822 /* Foundation.framework */; };
+		A985FE211725E35400745822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE201725E35400745822 /* CoreGraphics.framework */; };
+		A985FE271725E35400745822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A985FE251725E35400745822 /* InfoPlist.strings */; };
+		A985FE291725E35400745822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A985FE281725E35400745822 /* main.m */; };
+		A985FE2D1725E35400745822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A985FE2C1725E35400745822 /* AppDelegate.m */; };
+		A985FE301725E35400745822 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A985FE2E1725E35400745822 /* MainStoryboard.storyboard */; };
+		A985FE331725E35400745822 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A985FE321725E35400745822 /* ViewController.m */; };
+		A985FE3B1725E35400745822 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE3A1725E35400745822 /* SenTestingKit.framework */; };
+		A985FE3C1725E35400745822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE1C1725E35400745822 /* UIKit.framework */; };
+		A985FE3D1725E35400745822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE1E1725E35400745822 /* Foundation.framework */; };
+		A985FE451725E35400745822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A985FE431725E35400745822 /* InfoPlist.strings */; };
+		A985FE481725E35400745822 /* IPADWhatsTheOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A985FE471725E35400745822 /* IPADWhatsTheOrderTests.m */; };
+		A985FE521725E3B400745822 /* droidbg.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE511725E3B400745822 /* droidbg.png */; };
+		A985FE541725E3BA00745822 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE531725E3BA00745822 /* appicon.png */; };
+		A985FE561725E5D700745822 /* bannerpic.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE551725E5D700745822 /* bannerpic.png */; };
+		A985FE581725EB3F00745822 /* gamescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE571725EB3F00745822 /* gamescreen.png */; };
+		A985FE5A1725EC6B00745822 /* reward.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A985FE591725EC6B00745822 /* reward.mp4 */; };
+		A985FE5C1725EC7700745822 /* blocks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A985FE5B1725EC7700745822 /* blocks.mp4 */; };
+		A985FE7E1725EEBE00745822 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985FE7D1725EEBE00745822 /* MediaPlayer.framework */; };
+		A985FE86172754BB00745822 /* block1.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE83172754BA00745822 /* block1.png */; };
+		A985FE87172754BB00745822 /* block3.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE84172754BA00745822 /* block3.png */; };
+		A985FE88172754BB00745822 /* block2.png in Resources */ = {isa = PBXBuildFile; fileRef = A985FE85172754BB00745822 /* block2.png */; };
+		A985FE8D172754D600745822 /* 1stplace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A985FE8A172754D600745822 /* 1stplace.jpg */; };
+		A985FE8E172754D600745822 /* 2ndplace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A985FE8B172754D600745822 /* 2ndplace.jpg */; };
+		A985FE8F172754D600745822 /* 3rdplace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A985FE8C172754D600745822 /* 3rdplace.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A985FE3E1725E35400745822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A985FE0F1725E35400745822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A985FE171725E35400745822;
+			remoteInfo = IPADWhatsTheOrder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A985FE181725E35400745822 /* IPADWhatsTheOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPADWhatsTheOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A985FE1C1725E35400745822 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A985FE1E1725E35400745822 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A985FE201725E35400745822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A985FE241725E35400745822 /* IPADWhatsTheOrder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPADWhatsTheOrder-Info.plist"; sourceTree = "<group>"; };
+		A985FE261725E35400745822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A985FE281725E35400745822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A985FE2A1725E35400745822 /* IPADWhatsTheOrder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPADWhatsTheOrder-Prefix.pch"; sourceTree = "<group>"; };
+		A985FE2B1725E35400745822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A985FE2C1725E35400745822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A985FE2F1725E35400745822 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A985FE311725E35400745822 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A985FE321725E35400745822 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A985FE391725E35400745822 /* IPADWhatsTheOrderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPADWhatsTheOrderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A985FE3A1725E35400745822 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A985FE421725E35400745822 /* IPADWhatsTheOrderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPADWhatsTheOrderTests-Info.plist"; sourceTree = "<group>"; };
+		A985FE441725E35400745822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A985FE461725E35400745822 /* IPADWhatsTheOrderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPADWhatsTheOrderTests.h; sourceTree = "<group>"; };
+		A985FE471725E35400745822 /* IPADWhatsTheOrderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPADWhatsTheOrderTests.m; sourceTree = "<group>"; };
+		A985FE511725E3B400745822 /* droidbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = droidbg.png; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/App Images/droidbg.png"; sourceTree = "<group>"; };
+		A985FE531725E3BA00745822 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/App Images/appicon.png"; sourceTree = "<group>"; };
+		A985FE551725E5D700745822 /* bannerpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bannerpic.png; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/App Images/bannerpic.png"; sourceTree = "<group>"; };
+		A985FE571725EB3F00745822 /* gamescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gamescreen.png; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/App Images/gamescreen.png"; sourceTree = "<group>"; };
+		A985FE591725EC6B00745822 /* reward.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = reward.mp4; path = "../../../../../Desktop/Senior Year Classes/SPRING/Senior Project/SP - Videos/reward.mp4"; sourceTree = "<group>"; };
+		A985FE5B1725EC7700745822 /* blocks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = blocks.mp4; path = "../../../../../Desktop/Senior Year Classes/SPRING/Senior Project/SP - Videos/Video/blocks.mp4"; sourceTree = "<group>"; };
+		A985FE7D1725EEBE00745822 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A985FE83172754BA00745822 /* block1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block1.png; path = ../../../../../Desktop/block1.png; sourceTree = "<group>"; };
+		A985FE84172754BA00745822 /* block3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block3.png; path = ../../../../../Desktop/block3.png; sourceTree = "<group>"; };
+		A985FE85172754BB00745822 /* block2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block2.png; path = ../../../../../Desktop/block2.png; sourceTree = "<group>"; };
+		A985FE8A172754D600745822 /* 1stplace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1stplace.jpg; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/TimeApp/1stplace.jpg"; sourceTree = "<group>"; };
+		A985FE8B172754D600745822 /* 2ndplace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2ndplace.jpg; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/TimeApp/2ndplace.jpg"; sourceTree = "<group>"; };
+		A985FE8C172754D600745822 /* 3rdplace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3rdplace.jpg; path = "../../../../../Desktop/Senior Year Classes/FALL/Senior Project 1/Application Images/TimeApp/3rdplace.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A985FE151725E35400745822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE7E1725EEBE00745822 /* MediaPlayer.framework in Frameworks */,
+				A985FE1D1725E35400745822 /* UIKit.framework in Frameworks */,
+				A985FE1F1725E35400745822 /* Foundation.framework in Frameworks */,
+				A985FE211725E35400745822 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A985FE351725E35400745822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE3B1725E35400745822 /* SenTestingKit.framework in Frameworks */,
+				A985FE3C1725E35400745822 /* UIKit.framework in Frameworks */,
+				A985FE3D1725E35400745822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A985FE0D1725E35400745822 = {
+			isa = PBXGroup;
+			children = (
+				A985FE221725E35400745822 /* IPADWhatsTheOrder */,
+				A985FE401725E35400745822 /* IPADWhatsTheOrderTests */,
+				A985FE1B1725E35400745822 /* Frameworks */,
+				A985FE191725E35400745822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A985FE191725E35400745822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE181725E35400745822 /* IPADWhatsTheOrder.app */,
+				A985FE391725E35400745822 /* IPADWhatsTheOrderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A985FE1B1725E35400745822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE7D1725EEBE00745822 /* MediaPlayer.framework */,
+				A985FE1C1725E35400745822 /* UIKit.framework */,
+				A985FE1E1725E35400745822 /* Foundation.framework */,
+				A985FE201725E35400745822 /* CoreGraphics.framework */,
+				A985FE3A1725E35400745822 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A985FE221725E35400745822 /* IPADWhatsTheOrder */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE8A172754D600745822 /* 1stplace.jpg */,
+				A985FE8B172754D600745822 /* 2ndplace.jpg */,
+				A985FE8C172754D600745822 /* 3rdplace.jpg */,
+				A985FE83172754BA00745822 /* block1.png */,
+				A985FE84172754BA00745822 /* block3.png */,
+				A985FE85172754BB00745822 /* block2.png */,
+				A985FE5B1725EC7700745822 /* blocks.mp4 */,
+				A985FE591725EC6B00745822 /* reward.mp4 */,
+				A985FE571725EB3F00745822 /* gamescreen.png */,
+				A985FE551725E5D700745822 /* bannerpic.png */,
+				A985FE531725E3BA00745822 /* appicon.png */,
+				A985FE511725E3B400745822 /* droidbg.png */,
+				A985FE2B1725E35400745822 /* AppDelegate.h */,
+				A985FE2C1725E35400745822 /* AppDelegate.m */,
+				A985FE2E1725E35400745822 /* MainStoryboard.storyboard */,
+				A985FE311725E35400745822 /* ViewController.h */,
+				A985FE321725E35400745822 /* ViewController.m */,
+				A985FE231725E35400745822 /* Supporting Files */,
+			);
+			path = IPADWhatsTheOrder;
+			sourceTree = "<group>";
+		};
+		A985FE231725E35400745822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE241725E35400745822 /* IPADWhatsTheOrder-Info.plist */,
+				A985FE251725E35400745822 /* InfoPlist.strings */,
+				A985FE281725E35400745822 /* main.m */,
+				A985FE2A1725E35400745822 /* IPADWhatsTheOrder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A985FE401725E35400745822 /* IPADWhatsTheOrderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE461725E35400745822 /* IPADWhatsTheOrderTests.h */,
+				A985FE471725E35400745822 /* IPADWhatsTheOrderTests.m */,
+				A985FE411725E35400745822 /* Supporting Files */,
+			);
+			path = IPADWhatsTheOrderTests;
+			sourceTree = "<group>";
+		};
+		A985FE411725E35400745822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A985FE421725E35400745822 /* IPADWhatsTheOrderTests-Info.plist */,
+				A985FE431725E35400745822 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A985FE171725E35400745822 /* IPADWhatsTheOrder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A985FE4B1725E35400745822 /* Build configuration list for PBXNativeTarget "IPADWhatsTheOrder" */;
+			buildPhases = (
+				A985FE141725E35400745822 /* Sources */,
+				A985FE151725E35400745822 /* Frameworks */,
+				A985FE161725E35400745822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPADWhatsTheOrder;
+			productName = IPADWhatsTheOrder;
+			productReference = A985FE181725E35400745822 /* IPADWhatsTheOrder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A985FE381725E35400745822 /* IPADWhatsTheOrderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A985FE4E1725E35400745822 /* Build configuration list for PBXNativeTarget "IPADWhatsTheOrderTests" */;
+			buildPhases = (
+				A985FE341725E35400745822 /* Sources */,
+				A985FE351725E35400745822 /* Frameworks */,
+				A985FE361725E35400745822 /* Resources */,
+				A985FE371725E35400745822 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A985FE3F1725E35400745822 /* PBXTargetDependency */,
+			);
+			name = IPADWhatsTheOrderTests;
+			productName = IPADWhatsTheOrderTests;
+			productReference = A985FE391725E35400745822 /* IPADWhatsTheOrderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A985FE0F1725E35400745822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A985FE121725E35400745822 /* Build configuration list for PBXProject "IPADWhatsTheOrder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A985FE0D1725E35400745822;
+			productRefGroup = A985FE191725E35400745822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A985FE171725E35400745822 /* IPADWhatsTheOrder */,
+				A985FE381725E35400745822 /* IPADWhatsTheOrderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A985FE161725E35400745822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE271725E35400745822 /* InfoPlist.strings in Resources */,
+				A985FE301725E35400745822 /* MainStoryboard.storyboard in Resources */,
+				A985FE521725E3B400745822 /* droidbg.png in Resources */,
+				A985FE541725E3BA00745822 /* appicon.png in Resources */,
+				A985FE561725E5D700745822 /* bannerpic.png in Resources */,
+				A985FE581725EB3F00745822 /* gamescreen.png in Resources */,
+				A985FE86172754BB00745822 /* block1.png in Resources */,
+				A985FE87172754BB00745822 /* block3.png in Resources */,
+				A985FE88172754BB00745822 /* block2.png in Resources */,
+				A985FE8D172754D600745822 /* 1stplace.jpg in Resources */,
+				A985FE8E172754D600745822 /* 2ndplace.jpg in Resources */,
+				A985FE8F172754D600745822 /* 3rdplace.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A985FE361725E35400745822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE451725E35400745822 /* InfoPlist.strings in Resources */,
+				A985FE5A1725EC6B00745822 /* reward.mp4 in Resources */,
+				A985FE5C1725EC7700745822 /* blocks.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A985FE371725E35400745822 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A985FE141725E35400745822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE291725E35400745822 /* main.m in Sources */,
+				A985FE2D1725E35400745822 /* AppDelegate.m in Sources */,
+				A985FE331725E35400745822 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A985FE341725E35400745822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A985FE481725E35400745822 /* IPADWhatsTheOrderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A985FE3F1725E35400745822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A985FE171725E35400745822 /* IPADWhatsTheOrder */;
+			targetProxy = A985FE3E1725E35400745822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A985FE251725E35400745822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A985FE261725E35400745822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A985FE2E1725E35400745822 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A985FE2F1725E35400745822 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A985FE431725E35400745822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A985FE441725E35400745822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A985FE491725E35400745822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A985FE4A1725E35400745822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A985FE4C1725E35400745822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPADWhatsTheOrder/IPADWhatsTheOrder-Prefix.pch";
+				INFOPLIST_FILE = "IPADWhatsTheOrder/IPADWhatsTheOrder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A985FE4D1725E35400745822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPADWhatsTheOrder/IPADWhatsTheOrder-Prefix.pch";
+				INFOPLIST_FILE = "IPADWhatsTheOrder/IPADWhatsTheOrder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A985FE4F1725E35400745822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IPADWhatsTheOrder.app/IPADWhatsTheOrder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPADWhatsTheOrder/IPADWhatsTheOrder-Prefix.pch";
+				INFOPLIST_FILE = "IPADWhatsTheOrderTests/IPADWhatsTheOrderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A985FE501725E35400745822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IPADWhatsTheOrder.app/IPADWhatsTheOrder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPADWhatsTheOrder/IPADWhatsTheOrder-Prefix.pch";
+				INFOPLIST_FILE = "IPADWhatsTheOrderTests/IPADWhatsTheOrderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A985FE121725E35400745822 /* Build configuration list for PBXProject "IPADWhatsTheOrder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A985FE491725E35400745822 /* Debug */,
+				A985FE4A1725E35400745822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A985FE4B1725E35400745822 /* Build configuration list for PBXNativeTarget "IPADWhatsTheOrder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A985FE4C1725E35400745822 /* Debug */,
+				A985FE4D1725E35400745822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A985FE4E1725E35400745822 /* Build configuration list for PBXNativeTarget "IPADWhatsTheOrderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A985FE4F1725E35400745822 /* Debug */,
+				A985FE501725E35400745822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A985FE0F1725E35400745822 /* Project object */;
+}
