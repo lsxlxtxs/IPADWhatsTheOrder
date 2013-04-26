@@ -47,11 +47,17 @@
     
     NSInteger roundNum;
     
+    MPMoviePlayerController *moviePlayer;
+    MPMoviePlayerController *moviePlayerReward;
     
-    UIAlertView *myAlertView;
+    
 }
 
+//Movie Player
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayerReward;
 
+//Game Logic
 @property (nonatomic,retain) UIImage *oneImg;
 @property (nonatomic,retain) UIImage *twoImg;
 @property (nonatomic,retain) UIImage *threeImg;
@@ -67,11 +73,13 @@
 @property (nonatomic,retain) UIImageView *s5;
 @property (nonatomic,retain) UIImageView *s6;
 
-
-@property (nonatomic,retain) UIAlertView *myAlertView;
-
 -(BOOL) checkForWin;
 
+
+
+
+-(IBAction) playMovie;
+-(IBAction) playRewardMovie;
 
 
 

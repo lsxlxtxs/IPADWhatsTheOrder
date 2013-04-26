@@ -9,15 +9,18 @@
 #import "ViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface ViewController ()
-
-@end
-
 //@implementation ViewController
 @implementation UINavigationController (Rotation_IOS6)
 
+- (void)viewDidLoad 
+{
+
+   
+    [super viewDidLoad];
+}
 - (void)viewDidUnload
 {
+
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,7 +34,7 @@
 
 -(BOOL)shouldAutorotate
 {
-return [[self.viewControllers lastObject] shouldAutorotate];
+    return [[self.viewControllers lastObject] shouldAutorotate];
 }
 
 -(NSUInteger)supportedInterfaceOrientations
@@ -53,21 +56,35 @@ return [[self.viewControllers lastObject] shouldAutorotate];
 //have very well put them all on one line, or put everyone on its own @synthesize
 @synthesize s1,s2,s3,s4,s5,s6;
 @synthesize theImg,board,oneImg,twoImg,threeImg;
-@synthesize myAlertView;
+@synthesize moviePlayer;
+@synthesize moviePlayerReward;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initalization
     }
     return self;
+    
+    
+
 }
 
-- (void)viewDidLoad {
+- (void)viewDidUnload
+{
+
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (void)viewDidLoad 
+{
     
     oneImg = [UIImage imageNamed:@"block1.png"];
-    twoImg = [UIImage imageNamed:@"block3.png"];
-    threeImg = [UIImage imageNamed:@"block2.png"];
+    twoImg = [UIImage imageNamed:@"block2.png"];
+    threeImg = [UIImage imageNamed:@"block3.png"];
     
     blockSelected=0;
     roundNum=1;
@@ -77,6 +94,8 @@ return [[self.viewControllers lastObject] shouldAutorotate];
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {    
+
+    
     UITouch *touch = [[event allTouches]anyObject];
     cellWasUsed = NO;
     
@@ -90,13 +109,13 @@ return [[self.viewControllers lastObject] shouldAutorotate];
     // spot 2 - block 3
     if (CGRectContainsPoint([s5 frame], [touch locationInView:self.view])) {
         cellWasUsed = YES;
-        theImg = twoImg;
+        theImg = threeImg;
         blockSelected = 3;
     }
     // spot 3 - block 2
     if (CGRectContainsPoint([s6 frame], [touch locationInView:self.view])) {
         cellWasUsed = YES;
-        theImg = threeImg;
+        theImg = twoImg;
         blockSelected = 2;
         
     }
@@ -117,12 +136,17 @@ return [[self.viewControllers lastObject] shouldAutorotate];
         roundNum=3;
     }
     //touching frame 3
-    if (CGRectContainsPoint([s3 frame], [touch locationInView:self.view])&(blockSelected==3)&(roundNum==3)) {
+    if (CGRectContainsPoint([s3 frame], [touch locationInView:self.view])&(blockSelected==3)&(roundNum==3)) 
+    {
         cellWasUsed = YES;
         s5.image = NULL;
         s3.image = theImg;
         //you win
         roundNum=4;
+        
+        [self checkForWin];
+
+
     }
     
 }
@@ -131,28 +155,73 @@ return [[self.viewControllers lastObject] shouldAutorotate];
 
 -(BOOL)checkForWin{
     
-    // HORIZONTAL WINS
-    if((roundNum==4) & (s6.image == NULL) & (s5.image == NULL) & (s4.image == NULL))
+    // Check - WINS
+    if((roundNum==4) && (s6.image == NULL) && (s5.image == NULL) && (s4.image == NULL))
     {
-        return YES;
+        //play the reward video if they win
+        [self playRewardMovie];
     }
     //No Win
     return NO;
 }
 
--(void)displayWinner{
-    if([self checkForWin]==YES)
+
+
+
+    
+
+//block video
+-(void)playMovie
+{
+    NSURL *url = [NSURL URLWithString:
+                  @"http://londo.stetson.edu/cinf301.s2013/lseletos/blocks.mp4"];
+    
+    moviePlayer =  [[MPMoviePlayerController alloc]
+                    initWithContentURL:url];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:moviePlayer];
+    
+    moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    moviePlayer.shouldAutoplay = YES;
+    [self.view addSubview:moviePlayer.view];
+    [moviePlayer setFullscreen:YES animated:YES];
+}
+
+//reward video
+-(void)playRewardMovie
+{
+    NSURL *url = [NSURL URLWithString:
+                  @"http://londo.stetson.edu/cinf301.s2013/lseletos/reward.mp4"];
+    
+    moviePlayerReward =  [[MPMoviePlayerController alloc]
+                    initWithContentURL:url];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:moviePlayerReward];
+    
+    moviePlayerReward.controlStyle = MPMovieControlStyleDefault;
+    [self.view addSubview:moviePlayerReward.view];
+    [moviePlayerReward setFullscreen:YES animated:YES];
+}
+
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter] 
+     removeObserver:self
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:player];
+    
+    if ([player
+         respondsToSelector:@selector(setFullscreen:animated:)])
     {
-        //make a popup maybe? or just go into reward screen?
-        myAlertView = [[UIAlertView alloc] initWithTitle:@"Winner!" message:@"Good Job!" delegate:self
-                                       cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-        [myAlertView show];
+        [player.view removeFromSuperview];
     }
     
 }
 
-
-
-
-@end 
-
+@end

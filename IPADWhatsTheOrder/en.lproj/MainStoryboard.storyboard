@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="dy9-FQ-Y0R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="emY-hr-mm6">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -7,23 +7,23 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="Lai-aX-Niz">
+        <scene sceneID="1Ji-Xh-y3b">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SVS-p3-PJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="dy9-FQ-Y0R" sceneMemberID="viewController">
-                    <nil key="simulatedStatusBarMetrics"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="am4-xl-Ltk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="emY-hr-mm6" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="v1n-W7-vy5">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1LN-pD-CNb">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Gld-Cf-jhd" kind="relationship" relationship="rootViewController" id="wJK-zB-mc8"/>
+                        <segue destination="Gld-Cf-jhd" kind="relationship" relationship="rootViewController" id="DyU-tp-NCr"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-1021" y="-216"/>
+            <point key="canvasLocation" x="-865" y="-211"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UtX-ss-gG6">
@@ -120,7 +120,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qg6-vW-lbN" kind="push" id="Ec5-0S-Vpl"/>
+                                    <segue destination="U8Y-oW-CnP" kind="push" id="9Rm-eP-dkP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OeO-6a-FvD">
@@ -845,123 +845,13 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="267" y="-221"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="heH-Ji-NE8">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s3d-b2-IJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="qg6-vW-lbN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Inb-oT-HQi">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HGr-jU-pdu">
-                                <rect key="frame" x="833" y="636" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Skip">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="U8Y-oW-CnP" kind="push" id="MKU-z2-pip"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hCc-ez-Aqf"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="1931" y="-271"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="oJh-Lx-Zva">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2cv-Zg-DSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="kEb-2g-1nn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5db-WD-gjw">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gamescreen.png" id="kdR-og-j6r">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" image="1stplace.jpg" id="Lyr-UP-PsR">
-                                <rect key="frame" x="104" y="233" width="219" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Place1"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" image="block1.png" id="5bw-bw-nDq">
-                                <rect key="frame" x="98" y="452" width="230" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="block1"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" image="2ndplace.jpg" id="nZQ-TR-O6C">
-                                <rect key="frame" x="403" y="233" width="219" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Place2"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" image="block2.png" id="mLa-wl-DZj">
-                                <rect key="frame" x="706" y="452" width="230" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="block3"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" image="3rdplace.jpg" id="Udr-ok-zPZ">
-                                <rect key="frame" x="712" y="233" width="219" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Place3"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" image="block3.png" id="top-rq-Uf1">
-                                <rect key="frame" x="397" y="452" width="230" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="block2"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bannerpic.png" id="aJv-Om-zZW">
-                                <rect key="frame" x="357" y="13" width="310" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Good Luck!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="eT2-3n-h83">
-                                <rect key="frame" x="448" y="174" width="129" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2U8-pg-JDa">
-                                <rect key="frame" x="885" y="20" width="119" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Replay Video">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HIq-Tx-IVB"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="3723" y="-281"/>
+            <point key="canvasLocation" x="395" y="-221"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ya4-lh-dqe">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDk-Bk-oPe" sceneMemberID="firstResponder"/>
-                <viewController id="U8Y-oW-CnP" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="U8Y-oW-CnP" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mx7-0C-aau">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -994,18 +884,6 @@
                                 <rect key="frame" x="716" y="463" width="212" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kz5-C9-Pdd">
-                                <rect key="frame" x="873" y="28" width="119" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Replay Video">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bannerpic.png" id="w66-7w-jxI">
                                 <rect key="frame" x="365" y="10" width="295" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1017,23 +895,42 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XJK-99-09k">
+                                <rect key="frame" x="19" y="20" width="100" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMovie" destination="U8Y-oW-CnP" eventType="touchUpInside" id="aqs-Qx-bpZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Udw-SI-bY8"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="board" destination="qNq-aJ-ZT6" id="Hk1-e4-XMi"/>
-                        <outlet property="s1" destination="Bvk-tB-53c" id="Ss1-hZ-Str"/>
-                        <outlet property="s2" destination="fVs-uN-WBp" id="UgG-k4-jk5"/>
-                        <outlet property="s3" destination="2NM-N5-2z4" id="Go9-jg-I3a"/>
-                        <outlet property="s4" destination="hcq-dq-cQ3" id="nZE-bZ-smN"/>
-                        <outlet property="s5" destination="dRg-0G-Otj" id="cmf-oQ-6hD"/>
-                        <outlet property="s6" destination="kWx-BE-ohk" id="2dV-I9-QbQ"/>
+                        <outlet property="board" destination="qNq-aJ-ZT6" id="JeP-au-BLL"/>
+                        <outlet property="s1" destination="Bvk-tB-53c" id="LKl-jr-2pn"/>
+                        <outlet property="s2" destination="fVs-uN-WBp" id="Tcc-uS-toI"/>
+                        <outlet property="s3" destination="2NM-N5-2z4" id="8Rb-bm-8LM"/>
+                        <outlet property="s4" destination="hcq-dq-cQ3" id="z4t-R9-ZTl"/>
+                        <outlet property="s5" destination="dRg-0G-Otj" id="xLP-iv-ZLL"/>
+                        <outlet property="s6" destination="kWx-BE-ohk" id="zz0-5c-AQJ"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3328" y="798"/>
+            <point key="canvasLocation" x="1920" y="-202"/>
         </scene>
     </scenes>
     <resources>
@@ -1047,6 +944,24 @@
         <image name="droidbg.png" width="1024" height="767"/>
         <image name="gamescreen.png" width="1017" height="762"/>
     </resources>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="playMovie"/>
+                <relationship kind="outlet" name="board" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="oneImg" candidateClass="UIImage"/>
+                <relationship kind="outlet" name="s1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="s2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="s3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="s4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="s5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="s6" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="threeImg" candidateClass="UIImage"/>
+                <relationship kind="outlet" name="twoImg" candidateClass="UIImage"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

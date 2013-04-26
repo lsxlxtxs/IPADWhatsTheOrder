@@ -1,23 +1,33 @@
 //
 //  AppDelegate.m
-//  IPADWhatsTheOrder
 //
-//  Created by laura on 4/22/13.
+//  Created by laura on 4/24/13.
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+#pragma mark -
+#pragma mark Application lifecycle
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    
     // Override point for customization after application launch.
+    
+    // Add the view controller's view to the window and display.
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
+    
     return YES;
 }
-							
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -45,9 +55,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
--(IBAction)buttonTouched{ 
-    UILabel *label = (UILabel*)[window viewWithTag:10]; 
-    label.text = @"Hello Xcode"; 
-}  
+
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    /*
+     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
+     */
+}
+
+
+
 
 @end
